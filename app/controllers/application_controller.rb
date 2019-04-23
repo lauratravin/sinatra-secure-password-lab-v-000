@@ -21,10 +21,10 @@ class ApplicationController < Sinatra::Base
     user= User.new(:username => params[:username], :password => params[:password])
 
     if user.username != "username" || user.username != ""
-      
+
       redirect "/login"
     else
-      binding.pry
+    
       redirect "/failure"
     end
 
