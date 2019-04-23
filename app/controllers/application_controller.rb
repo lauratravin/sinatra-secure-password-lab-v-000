@@ -25,7 +25,7 @@ binding.pry
       redirect "/login"
     end
 
-    if  user.password.empty? || user.username.empty?
+    if  user.password == nil || user.username.empty
     binding.pry
       redirect "/failure"
     end
