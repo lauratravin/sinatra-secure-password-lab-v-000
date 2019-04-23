@@ -29,9 +29,6 @@ class ApplicationController < Sinatra::Base
     else
       if user.password.empty
         redirect "/failure"
-
-      else
-
       end
     end
 
